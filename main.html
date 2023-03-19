@@ -9,6 +9,27 @@
   </head>
   <body>
     <header>
+      <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Moviee
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#" target="_blank">Home</a>
+          <a href="#" target="_blank">Movies</a>
+          <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">About Us</a>
+        </div>
+      </nav>
       <div class="slideshow-container">
         <div class="mySlides-fade">
           <div class="numbertext">1 / 12</div>
@@ -96,38 +117,6 @@
         <span class="dot" onclick="currentSlide(12)"></span>
       </div>
     </header>
-
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides-fade");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
   </body>
+  <script type="text/javascript" src="main.js"></script>
 </html>
