@@ -4,7 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="slideshow-container">
+        <div class="mySlides-fade">
+          <div class="numbertext">1 / 12</div>
+          <img src="images/a-star-is-born.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">2 / 12</div>
+          <img src="images/before-sunrise.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">3 / 12</div>
+          <img src="images/black-panther.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">4 / 12</div>
+          <img src="images/dankirk.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">5 / 12</div>
+          <img src="images/doctor-strange.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">3 / 12</div>
+          <img src="images/forever-my-girl.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">6 / 12</div>
+          <img src="images/honeydew.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">7 / 12</div>
+          <img src="images/star-wars.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">8 / 12</div>
+          <img src="images/the-black-phone.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">9 / 12</div>
+          <img src="images/the-conjuring.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">10 / 12</div>
+          <img src="images/the-foreigner.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">11 / 12</div>
+          <img src="images/the-mallorca-files.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <div class="numbertext">12 / 12</div>
+          <img src="images/the-shed.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+      </div>
+    </header>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides-fade");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
 </html>
