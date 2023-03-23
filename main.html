@@ -9,69 +9,77 @@
   </head>
   <body>
     <header>
+      <nav class="nav" id="navbar">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Moviee
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#" target="_blank">Home</a>
+          <a href="#" target="_blank">Movies</a>
+          <a target="_blank">About Us</a>
+        </div>
+      </nav>
       <div class="slideshow-container">
         <div class="mySlides-fade">
-          <div class="numbertext">1 / 12</div>
           <img src="images/a-star-is-born.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">2 / 12</div>
           <img src="images/before-sunrise.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">3 / 12</div>
           <img src="images/black-panther.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">4 / 12</div>
           <img src="images/dankirk.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">5 / 12</div>
           <img src="images/doctor-strange.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">3 / 12</div>
           <img src="images/forever-my-girl.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">6 / 12</div>
           <img src="images/honeydew.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">7 / 12</div>
           <img src="images/star-wars.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">8 / 12</div>
           <img src="images/the-black-phone.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">9 / 12</div>
           <img src="images/the-conjuring.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">10 / 12</div>
           <img src="images/the-foreigner.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">11 / 12</div>
           <img src="images/the-mallorca-files.jpg" />
           <div class="text">Caption text</div>
         </div>
         <div class="mySlides-fade">
-          <div class="numbertext">12 / 12</div>
           <img src="images/the-shed.jpg" />
           <div class="text">Caption text</div>
         </div>
@@ -96,38 +104,6 @@
         <span class="dot" onclick="currentSlide(12)"></span>
       </div>
     </header>
-
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides-fade");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
   </body>
+  <script type="text/javascript" src="main.js"></script>
 </html>
