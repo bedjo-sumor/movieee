@@ -1,4 +1,7 @@
 let slideIndex = 1;
+// var navbar = document.getElementById("navbar"); 
+// var navOffset = navbar.offsetTop;
+
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -28,3 +31,12 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+// window.addEventListener("scroll", () => {
+//   (window.scrollY >= navOffset) ? 
+//       navbar.classList.add("fixed-nav") : 
+//       navbar.classList.remove("fixed-nav")
+// });
+
+
+

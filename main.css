@@ -12,12 +12,11 @@ body {
 img {
   vertical-align: middle;
   width: 100%;
-  padding: 5em;
+  height: 100%;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -114,12 +113,18 @@ img {
 
 
 .nav {
-    height: 50px;
     width: 100%;
     background-color: #4d4d4d;
-    position: relative;
+    position: fixed;
+    z-index: 289;
+    margin:0;
   }
-  
+/* #navbar.fixed-nav{
+  position:fixed;
+  top:0;
+  width:100%;
+}
+   */
   .nav > .nav-header {
     display: inline;
   }
