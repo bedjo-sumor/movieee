@@ -4,7 +4,6 @@
   font-family: Syncopate, sans-serif;
 }
 body {
-  font-family: "Averia Libre", sans-serif;
   margin: 0;
 }
 .mySlides-fade {
@@ -76,23 +75,25 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.movies {
-  padding-top: 50px;
-  display: flex;
-  flex-direction: row;
+.movies-category {
+  text-align: center;
 }
-
-.movies h1 {
+.movies-category h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+.movies {
+  text-align: center;
   display: flex;
-  flex: 2;
+  justify-content: center;
 }
 
 .movies-list img {
   width: 200px;
   height: 300px;
   display: flex;
-  flex-direction: column;
-  padding-right: 5px;
+  flex-flow: column wrap;
+  padding: 0 15px;
 }
 
 .active,
@@ -106,7 +107,7 @@ img {
   animation-duration: 1.5s;
 }
 
-.@keyframes fade {
+@keyframes fade {
   from {
     opacity: 0.4;
   }
@@ -217,5 +218,19 @@ img {
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
+  }
+
+  .movies {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .movies-list img {
+    width: 300px;
+    height: 500px;
   }
 }
