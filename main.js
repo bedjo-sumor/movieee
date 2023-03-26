@@ -32,6 +32,15 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+
+function expandImage(imgs,container_id) {
+  var expandImg = document.getElementById("expandedImg-"+container_id);
+  var imgText = document.getElementById("imgtext-"+container_id);
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+
 // window.addEventListener("scroll", () => {
 //   (window.scrollY >= navOffset) ? 
 //       navbar.classList.add("fixed-nav") : 

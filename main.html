@@ -105,63 +105,85 @@
       <div class="movies-category"><h1>action</h1></div>
       <div class="movies">
         <div class="movies-list">
-          <img src="images/black-panther.jpg" alt="black-panther" />
-          <h6>black panther</h6>
+          <img src="images/dankirk.jpg" alt="dankirk" onclick="expandImage(this,'action');" />
         </div>
         <div class="movies-list">
-          <img src="images/dankirk.jpg" alt="dankirk" />
-          <h6>dankirk</h6>
+          <img src="images/doctor-strange.jpg" alt="doctor-strange" onclick="expandImage(this,'action');"  />
         </div>
         <div class="movies-list">
-          <img src="images/doctor-strange.jpg" alt="doctor-strange" />
-          <h6>doctor strange</h6>
+          <img src="images/star-wars.jpg" alt="star-wars" onclick="expandImage(this,'action');"  />
         </div>
         <div class="movies-list">
-          <img src="images/star-wars.jpg" alt="star-wars" />
-          <h6>star wars</h6>
-        </div>
-        <div class="movies-list">
-          <img src="images/the-foreigner.jpg" alt="the-foreigner" />
-          <h6>the foreigner</h6>
+          <img src="images/the-foreigner.jpg" alt="the-foreigner" onclick="expandImage(this,'action');"  />
         </div>
       </div>
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg-action" class="expandedImg" style="width:100%">
+      
+        <!-- Image text -->
+        <div id="imgtext-action" class="imgtext"></div>
+      </div>
+
+
       <div class="movies-category"><h1>horror</h1></div>
       <div class="movies">
         <div class="movies-list">
-          <img src="images/honeydew.jpg" alt="honeydew" />
-          <h6>honeydew</h6>
+          <img src="images/honeydew.jpg" alt="honeydew" onclick="expandImage(this,'horror');" />
         </div>
         <div class="movies-list">
-          <img src="images/the-black-phone.jpg" alt="the-black-phone" />
-          <h6>the black phone</h6>
+          <img src="images/the-black-phone.jpg" alt="the-black-phone" onclick="expandImage(this,'horror');"  />
         </div>
         <div class="movies-list">
-          <img src="images/the-conjuring.jpg" alt="the-conjuring" />
-          <h6>the conjuring</h6>
+          <img src="images/the-conjuring.jpg" alt="the-conjuring" onclick="expandImage(this,'horror');"  />
         </div>
         <div class="movies-list">
-          <img src="images/the-shed.jpg" alt="the-shed" />
-          <h6>the shed</h6>
+          <img src="images/the-shed.jpg" alt="the-shed" onclick="expandImage(this,'horror');"  />
         </div>
       </div>
+
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg-horror" class="expandedImg" style="width:100%">
+      
+        <!-- Image text -->
+        <div id="imgtext-horror" class="imgtext"></div>
+      </div>
+
       <div class="movies-category"><h1>romantic</h1></div>
       <div class="movies">
         <div class="movies-list">
-          <img src="images/a-star-is-born.jpg" alt="a-star-is-born" />
-          <h6>a star is born</h6>
+          <img src="images/a-star-is-born.jpg" alt="a-star-is-born" onclick="expandImage(this,'romantic');" />
         </div>
         <div class="movies-list">
-          <img src="images/before-sunrise.jpg" alt="before-sunrise" />
+          <img src="images/before-sunrise.jpg" alt="before-sunrise" onclick="expandImage(this,'romantic');"/>
           <h6>before sunrise</h6>
         </div>
         <div class="movies-list">
-          <img src="images/forever-my-girl.jpg" alt="forever-my-girl" />
+          <img src="images/forever-my-girl.jpg" alt="forever-my-girl" onclick="expandImage(this,'romantic');" />
           <h6>forever my girl</h6>
         </div>
         <div class="movies-list">
-          <img src="images/the-mallorca-files.jpg" alt="the-mallorca-files" />
+          <img src="images/the-mallorca-files.jpg" alt="the-mallorca-files" onclick="expandImage(this,'romantic');" />
           <h6>the mallorca files</h6>
         </div>
+      </div>
+
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg-romantic" class="expandedImg" style="width:100%">
+      
+        <!-- Image text -->
+        <div id="imgtext-romantic" class="imgtext"></div>
       </div>
     </main>
   </body>
