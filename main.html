@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav" id="navbar">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <div class="nav-title">Moviee</div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="#" target="_blank">Home</a>
+          <a href="#" target="_blank">Movies</a>
+          <a target="_blank">About Us</a>
+        </div>
+      </nav>
+      <div class="slideshow-container">
+        <div class="mySlides-fade">
+          <img src="images/a-star-is-born.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/before-sunrise.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/black-panther.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/dankirk.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/doctor-strange.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/forever-my-girl.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/honeydew.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/star-wars.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/the-black-phone.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/the-conjuring.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/the-foreigner.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/the-mallorca-files.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides-fade">
+          <img src="images/the-shed.jpg" />
+          <div class="text">Caption text</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+      </div>
+    </header>
+    <main>
+      <div class="movies">
+        <h1>action</h1>
+        <div class="movies-list">
+          <img src="images/black-panther.jpg" alt="black-panther" />
+          <h6>black panther</h6>
+        </div>
+        <div class="movies-list">
+          <img src="images/dankirk.jpg" alt="dankirk" />
+          <h6>dankirk</h6>
+        </div>
+        <div class="movies-list">
+          <img src="images/doctor-strange.jpg" alt="doctor-strange" />
+          <h6>doctor strange</h6>
+        </div>
+        <div class="movies-list">
+          <img src="images/star-wars.jpg" alt="star-wars" />
+          <h6>star wars</h6>
+        </div>
+        <div class="movies-list">
+          <img src="images/the-foreigner.jpg" alt="the-foreigner" />
+          <h6>the foreigner</h6>
+        </div>
+      </div>
+      <div class="movies">
+        <h1>horror</h1>
+        <div class="movies-list">
+          <img src="images/honeydew.jpg" alt="honeydew" />
+          <h6>honeydew</h6>
+        </div>
+        <div class="movies-list">
+          <img src="images/the-black-phone.jpg" alt="the-black-phone" />
+          <h6>the black phone</h6>
+        </div>
+        <div class="movies-list">
+          <img src="images/the-conjuring.jpg" alt="the-conjuring" />
+          <h6>the conjuring</h6>
+        </div>
+        <div class="movies-list">
+          <img src="images/the-shed.jpg" alt="the-shed" />
+          <h6>the shed</h6>
+        </div>
+      </div>
+      <div class="movies">
+        <h1>romantic</h1>
+        <div class="movies-list">
+          <img src="images/a-star-is-born.jpg" alt="a-star-is-born" />
+          <h6>a star is born</h6>
+        </div>
+        <div class="movies-list">
+          <img src="images/before-sunrise.jpg" alt="before-sunrise" />
+          <h6>before sunrise</h6>
+        </div>
+        <div class="movies-list">
+          <img src="images/forever-my-girl.jpg" alt="forever-my-girl" />
+          <h6>forever my girl</h6>
+        </div>
+        <div class="movies-list">
+          <img src="images/the-mallorca-files.jpg" alt="the-mallorca-files" />
+          <h6>the mallorca files</h6>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script type="text/javascript" src="main.js"></script>
+</html>
